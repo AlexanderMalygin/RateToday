@@ -55,16 +55,11 @@ class TableViewController: UITableViewController {
                         return nil
                     }
                 }
-                
 
                 self.exchange.append(contentsOf: usdRateToday)
                 self.exchange.append(contentsOf: euroRateToday)
                 self.exchange.append(contentsOf: rubRateToday)
-                
-                
-            
-                
-                
+
                 print(usdRateToday)
                 print(euroRateToday)
                 print(rubRateToday)
@@ -112,12 +107,8 @@ class TableViewController: UITableViewController {
                     }
                     
                   
-                }
+                 }
                 
-                print(usdRate)
-                print(euroRate)
-                print(rubRate)
-        
                }catch{
                    print(error)
                }
