@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75DE995423AD1C130045DFB4 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DE995223AD1C130045DFB4 /* down.png */; };
+		75DE995523AD1C130045DFB4 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DE995323AD1C130045DFB4 /* up.png */; };
+		75DE995723AD44F40045DFB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE995623AD44F40045DFB4 /* NetworkService.swift */; };
+		75FBC7FE239A44F90076B755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBC7FD239A44F90076B755 /* AppDelegate.swift */; };
+		75FBC800239A44F90076B755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBC7FF239A44F90076B755 /* SceneDelegate.swift */; };
+		75FBC805239A44F90076B755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBC803239A44F90076B755 /* Main.storyboard */; };
+		75FBC807239A45000076B755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FBC806239A45000076B755 /* Assets.xcassets */; };
+		75FBC80A239A45000076B755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBC808239A45000076B755 /* LaunchScreen.storyboard */; };
+		75FBC812239A52A30076B755 /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBC811239A52A30076B755 /* ExchangeModel.swift */; };
+		75FBC814239A60F20076B755 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBC813239A60F20076B755 /* TableViewController.swift */; };
+		75FBC816239A690A0076B755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBC815239A690A0076B755 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75DE995223AD1C130045DFB4 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		75DE995323AD1C130045DFB4 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		75DE995623AD44F40045DFB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		75FBC7FA239A44F90076B755 /* PrivatBank today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PrivatBank today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75FBC7FD239A44F90076B755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75FBC7FF239A44F90076B755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75FBC804239A44F90076B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75FBC806239A45000076B755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75FBC809239A45000076B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75FBC80B239A45000076B755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FBC811239A52A30076B755 /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		75FBC813239A60F20076B755 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		75FBC815239A690A0076B755 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75FBC7F7239A44F90076B755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75FBC7F1239A44F90076B755 = {
+			isa = PBXGroup;
+			children = (
+				75FBC7FC239A44F90076B755 /* RateToday */,
+				75FBC7FB239A44F90076B755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75FBC7FB239A44F90076B755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC7FA239A44F90076B755 /* PrivatBank today.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75FBC7FC239A44F90076B755 /* RateToday */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC7FD239A44F90076B755 /* AppDelegate.swift */,
+				75FBC7FF239A44F90076B755 /* SceneDelegate.swift */,
+				75DE995623AD44F40045DFB4 /* NetworkService.swift */,
+				75FBC813239A60F20076B755 /* TableViewController.swift */,
+				75FBC815239A690A0076B755 /* TableViewCell.swift */,
+				75FBC811239A52A30076B755 /* ExchangeModel.swift */,
+				75FBC803239A44F90076B755 /* Main.storyboard */,
+				75FBC806239A45000076B755 /* Assets.xcassets */,
+				75FBC808239A45000076B755 /* LaunchScreen.storyboard */,
+				75FBC80B239A45000076B755 /* Info.plist */,
+				75DE995223AD1C130045DFB4 /* down.png */,
+				75DE995323AD1C130045DFB4 /* up.png */,
+			);
+			path = RateToday;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75FBC7F9239A44F90076B755 /* RateToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75FBC80E239A45000076B755 /* Build configuration list for PBXNativeTarget "RateToday" */;
+			buildPhases = (
+				75FBC7F6239A44F90076B755 /* Sources */,
+				75FBC7F7239A44F90076B755 /* Frameworks */,
+				75FBC7F8239A44F90076B755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RateToday;
+			productName = RateToday;
+			productReference = 75FBC7FA239A44F90076B755 /* PrivatBank today.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75FBC7F2239A44F90076B755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Alexader Malygin";
+				TargetAttributes = {
+					75FBC7F9239A44F90076B755 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 75FBC7F5239A44F90076B755 /* Build configuration list for PBXProject "RateToday" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75FBC7F1239A44F90076B755;
+			productRefGroup = 75FBC7FB239A44F90076B755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75FBC7F9239A44F90076B755 /* RateToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75FBC7F8239A44F90076B755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FBC80A239A45000076B755 /* LaunchScreen.storyboard in Resources */,
+				75DE995423AD1C130045DFB4 /* down.png in Resources */,
+				75DE995523AD1C130045DFB4 /* up.png in Resources */,
+				75FBC807239A45000076B755 /* Assets.xcassets in Resources */,
+				75FBC805239A44F90076B755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75FBC7F6239A44F90076B755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FBC816239A690A0076B755 /* TableViewCell.swift in Sources */,
+				75FBC7FE239A44F90076B755 /* AppDelegate.swift in Sources */,
+				75FBC812239A52A30076B755 /* ExchangeModel.swift in Sources */,
+				75FBC814239A60F20076B755 /* TableViewController.swift in Sources */,
+				75DE995723AD44F40045DFB4 /* NetworkService.swift in Sources */,
+				75FBC800239A44F90076B755 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75FBC803239A44F90076B755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FBC804239A44F90076B755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75FBC808239A45000076B755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75FBC809239A45000076B755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75FBC80C239A45000076B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75FBC80D239A45000076B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75FBC80F239A45000076B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACK684Q2U7;
+				INFOPLIST_FILE = RateToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = malygin.RateToday;
+				PRODUCT_NAME = "PrivatBank today";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		75FBC810239A45000076B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACK684Q2U7;
+				INFOPLIST_FILE = RateToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = malygin.RateToday;
+				PRODUCT_NAME = "PrivatBank today";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75FBC7F5239A44F90076B755 /* Build configuration list for PBXProject "RateToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FBC80C239A45000076B755 /* Debug */,
+				75FBC80D239A45000076B755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75FBC80E239A45000076B755 /* Build configuration list for PBXNativeTarget "RateToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75FBC80F239A45000076B755 /* Debug */,
+				75FBC810239A45000076B755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75FBC7F2239A44F90076B755 /* Project object */;
+}
