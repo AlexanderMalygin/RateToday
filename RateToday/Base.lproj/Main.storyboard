@@ -9,46 +9,61 @@
         <!--PrivatBank today-->
         <scene sceneID="Pco-Ue-XuG">
             <objects>
-                <tableViewController id="7m7-jR-JSM" customClass="TableViewController" customModule="Rate_Today" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7m7-jR-JSM" customClass="TableViewController" customModule="PrivatBank_today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XCV-wh-aYp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="spr-zx-Zjd" customClass="TableViewCell" customModule="Rate_Today" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="spr-zx-Zjd" customClass="TableViewCell" customModule="PrivatBank_today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="spr-zx-Zjd" id="28O-3G-5Zy">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Валюта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etf-tf-bgG">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Валюта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etf-tf-bgG">
                                             <rect key="frame" x="16" y="11" width="60" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Покупка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tp-Qf-fWv">
-                                            <rect key="frame" x="218" y="24.5" width="68" height="21"/>
+                                            <rect key="frame" x="191" y="24.5" width="68" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="WJa-cu-sUh"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up.png" translatesAutoresizingMaskIntoConstraints="NO" id="58H-bG-Xaw">
+                                            <rect key="frame" x="279" y="20" width="25" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="4M8-Q8-ptm"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="c2j-mc-29Q"/>
+                                                <constraint firstAttribute="height" constant="30" id="cZc-bu-yD2"/>
+                                                <constraint firstAttribute="width" constant="25" id="zgh-x3-ICL"/>
+                                            </constraints>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продажа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mk-2I-QTj">
-                                            <rect key="frame" x="111" y="24.5" width="74" height="21"/>
+                                            <rect key="frame" x="96" y="24.5" width="74" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="KlV-TV-tCR"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="3Mk-2I-QTj" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="6h8-TH-3zm"/>
-                                        <constraint firstItem="etf-tf-bgG" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="LsC-J9-YjI"/>
-                                        <constraint firstItem="3Mk-2I-QTj" firstAttribute="leading" secondItem="etf-tf-bgG" secondAttribute="trailing" constant="35" id="bO9-iK-p07"/>
-                                        <constraint firstItem="2tp-Qf-fWv" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="hE7-Xs-a0b"/>
-                                        <constraint firstItem="etf-tf-bgG" firstAttribute="leading" secondItem="28O-3G-5Zy" secondAttribute="leadingMargin" id="jna-6p-ICK"/>
-                                        <constraint firstItem="2tp-Qf-fWv" firstAttribute="leading" secondItem="3Mk-2I-QTj" secondAttribute="trailing" constant="33" id="wIz-Jz-8Es"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="etf-tf-bgG" secondAttribute="bottom" id="xYL-4v-H2m"/>
+                                        <constraint firstItem="2tp-Qf-fWv" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="2s8-9A-zwI"/>
+                                        <constraint firstItem="3Mk-2I-QTj" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="8zP-LU-aHw"/>
+                                        <constraint firstItem="58H-bG-Xaw" firstAttribute="leading" secondItem="2tp-Qf-fWv" secondAttribute="trailing" constant="20" id="FXY-ih-8XS"/>
+                                        <constraint firstItem="58H-bG-Xaw" firstAttribute="centerY" secondItem="28O-3G-5Zy" secondAttribute="centerY" id="I2e-Io-sgw"/>
+                                        <constraint firstItem="2tp-Qf-fWv" firstAttribute="leading" secondItem="3Mk-2I-QTj" secondAttribute="trailing" constant="21" id="UdJ-CL-SEs"/>
+                                        <constraint firstItem="3Mk-2I-QTj" firstAttribute="leading" secondItem="28O-3G-5Zy" secondAttribute="leading" constant="96" id="mqo-nt-zIK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -67,7 +82,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSV-VK-qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320.28985507246381" y="64.285714285714278"/>
+            <point key="canvasLocation" x="318.75" y="63.380281690140848"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Tk-yA-7t3">
@@ -88,4 +103,7 @@
             <point key="canvasLocation" x="-589.85507246376812" y="64.285714285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="up.png" width="192" height="192"/>
+    </resources>
 </document>
