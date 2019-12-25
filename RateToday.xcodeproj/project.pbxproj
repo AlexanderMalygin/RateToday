@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759AE09D23B38EF5009BA411 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AE09C23B38EF5009BA411 /* DateFormatter.swift */; };
 		75DE995423AD1C130045DFB4 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DE995223AD1C130045DFB4 /* down.png */; };
 		75DE995523AD1C130045DFB4 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DE995323AD1C130045DFB4 /* up.png */; };
 		75DE995723AD44F40045DFB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DE995623AD44F40045DFB4 /* NetworkService.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		759AE09C23B38EF5009BA411 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		75DE995223AD1C130045DFB4 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		75DE995323AD1C130045DFB4 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		75DE995623AD44F40045DFB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				75FBC7FF239A44F90076B755 /* SceneDelegate.swift */,
 				75DE995623AD44F40045DFB4 /* NetworkService.swift */,
 				75FBC813239A60F20076B755 /* TableViewController.swift */,
+				759AE09C23B38EF5009BA411 /* DateFormatter.swift */,
 				75FBC815239A690A0076B755 /* TableViewCell.swift */,
 				75FBC811239A52A30076B755 /* ExchangeModel.swift */,
 				75FBC803239A44F90076B755 /* Main.storyboard */,
@@ -158,6 +161,7 @@
 				75FBC816239A690A0076B755 /* TableViewCell.swift in Sources */,
 				75FBC7FE239A44F90076B755 /* AppDelegate.swift in Sources */,
 				75FBC812239A52A30076B755 /* ExchangeModel.swift in Sources */,
+				759AE09D23B38EF5009BA411 /* DateFormatter.swift in Sources */,
 				75FBC814239A60F20076B755 /* TableViewController.swift in Sources */,
 				75DE995723AD44F40045DFB4 /* NetworkService.swift in Sources */,
 				75FBC800239A44F90076B755 /* SceneDelegate.swift in Sources */,

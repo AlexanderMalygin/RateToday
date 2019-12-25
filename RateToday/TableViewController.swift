@@ -23,6 +23,7 @@ class TableViewController: UITableViewController {
     
     
     
+    
     func requestRateToday() {
            let today = getTodayDay()
            guard let url = URL(string: "https://api.privatbank.ua/p24api/exchange_rates?json&date=\(today)") else {return}
@@ -116,31 +117,7 @@ class TableViewController: UITableViewController {
         
        }
     
-       //    MARK: - Function get yesterday
-           private func getYesterdayDay() -> String {
-               let date = Date()
-               let format = DateFormatter()
-               format.dateFormat = "dd.MM.yyyy"
-            _ = format.string(from: date)
-            
-               let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: date)!
-            _ = format.string(from: yesterday)
-               
-               return format.string(from: yesterday)
-           }
-           
-           //    MARK: - Function get today
-           private func getTodayDay() -> String {
-                let date = Date()
-                let format = DateFormatter()
-                format.dateFormat = "dd.MM.yyyy"
-                return format.string(from: date)
-               
-           }
-    
-    
        
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
