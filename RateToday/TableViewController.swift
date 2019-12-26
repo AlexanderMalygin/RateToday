@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController {
 
     var exchange: [Exchange] = []
-    
+    let networkService = NetworkService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,102 +21,18 @@ class TableViewController: UITableViewController {
         
     }
     
-    
-    
-    
     func requestRateToday() {
-           let today = getTodayDay()
-           guard let url = URL(string: "https://api.privatbank.ua/p24api/exchange_rates?json&date=\(today)") else {return}
-           
-           let session = URLSession.shared
-           session.dataTask(with: url) { (data, response, error) in
-
-               do{
-                   let jsonDecoder = JSONDecoder()
-                   let initial = try jsonDecoder.decode(Initial.self, from: data!)
-                   
-                let usdRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                       if exchangeRate.currency == "USD" {
-                           return exchangeRate
-                       } else {
-                           return nil
-                       }
-                   }
-                let euroRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "EUR" {
-                        return exchangeRate
-                    } else {
-                        return nil
-                    }
-                }
-                let rubRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "RUB" {
-                        return exchangeRate
-                    } else {
-                        return nil
-                    }
-                }
-
-                self.exchange.append(contentsOf: usdRateToday)
-                self.exchange.append(contentsOf: euroRateToday)
-                self.exchange.append(contentsOf: rubRateToday)
-
-                print(usdRateToday)
-                print(euroRateToday)
-                print(rubRateToday)
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-                   
-               }catch{
-                   print(error)
-               }
-           }.resume()
-       }
-       
-       func requestRateYesterday() {
-           let yesterday = getYesterdayDay()
-           guard let url = URL(string: "https://api.privatbank.ua/p24api/exchange_rates?json&date=\(yesterday)") else {return}
-           
-           let session = URLSession.shared
-           session.dataTask(with: url) { (data, response, error) in
-
-               do{
-                   let jsonDecoder = JSONDecoder()
-                   let initial = try jsonDecoder.decode(Initial.self, from: data!)
-                   
-                let usdRate = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                       if exchangeRate.currency == "USD" {
-                           return exchangeRate
-                       } else {
-                           return nil
-                       }
-                   }
-                let euroRate = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "EUR" {
-                        return exchangeRate
-                    } else {
-                        return nil
-                    }
-                }
-                let rubRate = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "RUB" {
-                        return exchangeRate
-                    } else {
-                        return nil
-                    }
-                    
-                  
-                 }
-                
-               }catch{
-                   print(error)
-               }
-           }.resume()
+        networkService.requestRateToday { [weak self] exchange in
+            self?.exchange = exchange
+            self?.tableView.reloadData()
+        }
         
        }
-    
+    func requestRateYesterday() {
+        networkService.requestRateYesterday { [weak self] exchange in
+        self?.exchange = exchange
+        }
+    }
        
     // MARK: - Table view data source
 
