@@ -26,44 +26,39 @@ class NetworkService {
                     completion(initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
                         if exchangeRate.currency == "USD" {
                             return exchangeRate
+                        } else if exchangeRate.currency == "EUR" {
+                            return exchangeRate
+                        } else  if exchangeRate.currency == "RUB"{
+                            return exchangeRate
                         } else {
                             return nil
                         }
                     }
                     )
-                    
                 }
                 
-                
-             let usdRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "USD" {
-                        return exchangeRate
-                    } else {
-                        return nil
-                    }
-                }
-             let euroRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                 if exchangeRate.currency == "EUR" {
-                     return exchangeRate
-                 } else {
-                     return nil
-                 }
-             }
-             let rubRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                 if exchangeRate.currency == "RUB" {
-                     return exchangeRate
-                 } else {
-                     return nil
-                 }
-             }
-
-//             self.exchange.append(contentsOf: usdRateToday)
-//             self.exchange.append(contentsOf: euroRateToday)
-//             self.exchange.append(contentsOf: rubRateToday)
-
-             print(usdRateToday)
-
-
+//
+//             let usdRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
+//                    if exchangeRate.currency == "USD" {
+//                        return exchangeRate
+//                    } else {
+//                        return nil
+//                    }
+//                }
+//             let euroRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
+//                 if exchangeRate.currency == "EUR" {
+//                     return exchangeRate
+//                 } else {
+//                     return nil
+//                 }
+//             }
+//             let rubRateToday = initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
+//                 if exchangeRate.currency == "RUB" {
+//                     return exchangeRate
+//                 } else {
+//                     return nil
+//                 }
+//             }
                 
             }catch{
                 print(error)
@@ -84,8 +79,9 @@ class NetworkService {
                do{
                    let jsonDecoder = JSONDecoder()
                    let initial = try jsonDecoder.decode(Initial.self, from: data!)
+                
                 completion(initial.exchangeRate.compactMap { (exchangeRate) -> Exchange? in
-                    if exchangeRate.currency == "USD" {
+                    if exchangeRate.currency == "EUR" {
                         return exchangeRate
                     } else {
                         return nil
@@ -113,9 +109,7 @@ class NetworkService {
                         return nil
                     }
                     
-                  
                  }
-                print(usdRate)
                 
                }catch{
                    print(error)
@@ -123,8 +117,6 @@ class NetworkService {
            }.resume()
         
        }
-    
-       
     
 }
 
