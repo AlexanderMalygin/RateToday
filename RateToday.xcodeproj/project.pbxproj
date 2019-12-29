@@ -49,6 +49,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759AE09E23B8F6DA009BA411 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				75DE995623AD44F40045DFB4 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		759AE09F23B8F700009BA411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC813239A60F20076B755 /* TableViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		759AE0A023B8F751009BA411 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC7FF239A44F90076B755 /* SceneDelegate.swift */,
+				75FBC803239A44F90076B755 /* Main.storyboard */,
+				75FBC806239A45000076B755 /* Assets.xcassets */,
+				75FBC808239A45000076B755 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		759AE0A123B8F7A2009BA411 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC7FD239A44F90076B755 /* AppDelegate.swift */,
+				75FBC80B239A45000076B755 /* Info.plist */,
+				759AE0A423B8F87C009BA411 /* Common */,
+				759AE09E23B8F6DA009BA411 /* NetworkService */,
+				759AE09F23B8F700009BA411 /* Controller */,
+				759AE0A223B8F80D009BA411 /* Model */,
+				759AE0A323B8F852009BA411 /* Cell */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		759AE0A223B8F80D009BA411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC811239A52A30076B755 /* ExchangeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		759AE0A323B8F852009BA411 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				75FBC815239A690A0076B755 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		759AE0A423B8F87C009BA411 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				759AE09C23B38EF5009BA411 /* DateFormatter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		75FBC7F1239A44F90076B755 = {
 			isa = PBXGroup;
 			children = (
@@ -68,17 +134,8 @@
 		75FBC7FC239A44F90076B755 /* RateToday */ = {
 			isa = PBXGroup;
 			children = (
-				75FBC7FD239A44F90076B755 /* AppDelegate.swift */,
-				75FBC7FF239A44F90076B755 /* SceneDelegate.swift */,
-				75DE995623AD44F40045DFB4 /* NetworkService.swift */,
-				75FBC813239A60F20076B755 /* TableViewController.swift */,
-				759AE09C23B38EF5009BA411 /* DateFormatter.swift */,
-				75FBC815239A690A0076B755 /* TableViewCell.swift */,
-				75FBC811239A52A30076B755 /* ExchangeModel.swift */,
-				75FBC803239A44F90076B755 /* Main.storyboard */,
-				75FBC806239A45000076B755 /* Assets.xcassets */,
-				75FBC808239A45000076B755 /* LaunchScreen.storyboard */,
-				75FBC80B239A45000076B755 /* Info.plist */,
+				759AE0A023B8F751009BA411 /* Resources */,
+				759AE0A123B8F7A2009BA411 /* Sources */,
 				75DE995223AD1C130045DFB4 /* down.png */,
 				75DE995323AD1C130045DFB4 /* up.png */,
 			);
