@@ -9,15 +9,8 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
-    
     @IBOutlet weak var currency: UILabel!
-    
     @IBOutlet weak var saleRate: UILabel!
-    
     @IBOutlet weak var purchaseRate: UILabel!
-    
     @IBOutlet weak var rateImage: UIImageView!
-    
-
 }
